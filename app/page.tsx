@@ -34,8 +34,8 @@ export default function Home() {
     },
   };
   return (
-    <div className="bg-neutral-900 h-screen w-full">
-      <div className="py-4 px-4">
+    <div className="h-screen w-full bg-neutral-900">
+      <div className="px-4 py-4">
         <motion.button
           whileHover={{
             scale: 1.1,
@@ -49,7 +49,7 @@ export default function Home() {
             ease: "easeInOut",
           }}
           onClick={() => setOpen(!open)}
-          className="bg-cyan-400 h-10 w-10 rounded-full flex items-center justify-center cursor-pointer"
+          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-cyan-400"
         >
           {open ? (
             <RxCross2 color="white" size={20} />
@@ -64,7 +64,7 @@ export default function Home() {
               initial="close"
               animate="open"
               exit="close"
-              className="absolute flex flex-col gap-7 mt-7"
+              className="absolute mt-7 flex flex-col gap-7"
               transition={{
                 delayChildren: 0.3,
                 duration: 0.3,
@@ -74,7 +74,7 @@ export default function Home() {
                 <motion.div key={link.id} variants={childrenVariants}>
                   <Link
                     href={link.link}
-                    className="bg-cyan-200 py-2 px-3 rounded-md"
+                    className="rounded-md bg-cyan-200 px-3 py-2"
                   >
                     {link.name}
                   </Link>

@@ -5,7 +5,7 @@ import { useState } from "react";
 const Modal = () => {
   const [isVisible, setIsVisible] = useState(false);
   return (
-    <div className="bg-neutral-900 h-screen flex-col gap-10 flex justify-center items-center">
+    <div className="flex h-screen flex-col items-center justify-center gap-10 bg-neutral-900">
       <div className="h-30">
         <AnimatePresence>
           {isVisible && (
@@ -26,7 +26,7 @@ const Modal = () => {
                 duration: 0.3,
                 ease: "easeInOut",
               }}
-              className="w-30 h-30 bg-cyan-500 rounded-xl"
+              className="h-30 w-30 rounded-xl bg-cyan-500"
             ></motion.div>
           )}
         </AnimatePresence>
@@ -42,7 +42,7 @@ const Modal = () => {
           duration: 0.3,
           type: spring,
         }}
-        className="bg-gray-800 px-10 py-2 rounded-md text-gray-200 cursor-pointer"
+        className="cursor-pointer rounded-md bg-gray-800 px-10 py-2 text-gray-200"
         onClick={() => setIsVisible(!isVisible)}
       >
         {isVisible ? "Hide" : "Show"}

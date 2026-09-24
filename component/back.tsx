@@ -10,7 +10,7 @@ const Back = () => {
     <div className="absolute top-4 left-4">
       {currentpage !== "/" && (
         <Link href={"/"}>
-          <button className="flex flex-row gap-3 items-center bg-gray-200 rounded-md px-4 py-2 cursor-pointer">
+          <button className="flex cursor-pointer flex-row items-center gap-3 rounded-md bg-gray-200 px-4 py-2">
             <IoMdArrowRoundBack />
             <span>Back to Home</span>
           </button>

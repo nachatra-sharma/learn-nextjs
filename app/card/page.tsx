@@ -6,7 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 const Card = () => {
   const [open, setOpen] = useState(true);
   return (
-    <div className="h-screen flex justify-center items-center bg-neutral-900">
+    <div className="flex h-screen items-center justify-center bg-neutral-900">
       <AnimatePresence>
         {open && (
           <motion.div
@@ -31,18 +31,18 @@ const Card = () => {
               stiffness: 200,
               damping: 20,
             }}
-            className="h-2/4 w-xs bg-white border border-gray-200 rounded-lg shadow-2xl"
+            className="h-2/4 w-xs rounded-lg border border-gray-200 bg-white shadow-2xl"
           >
-            <div className="w-[90%] mx-auto py-4 flex flex-col gap-2">
-              <h2 className="text-neutral-600 font-semibold text-base">
+            <div className="mx-auto flex w-[90%] flex-col gap-2 py-4">
+              <h2 className="text-base font-semibold text-neutral-600">
                 Aceternity UI Components
               </h2>
-              <p className="text-gray-600 text-sm">
+              <p className="text-sm text-gray-600">
                 A collection of ui component for your project, get on with it.
               </p>
               <div className="mx-auto mt-2">
                 <button
-                  className="px-4 py-1 shadow-md rounded-lg font-semibold text-sm flex flex-row gap-3 items-center cursor-pointer"
+                  className="flex cursor-pointer flex-row items-center gap-3 rounded-lg px-4 py-1 text-sm font-semibold shadow-md"
                   onClick={() => setOpen(!open)}
                 >
                   Aceternity{" "}
@@ -51,7 +51,7 @@ const Card = () => {
                   </span>
                 </button>
               </div>
-              <div className="relative mt-4 w-full bg-neutral-100 h-60 rounded-lg border border-gray-200">
+              <div className="relative mt-4 h-60 w-full rounded-lg border border-gray-200 bg-neutral-100">
                 <motion.div
                   initial={{
                     opacity: 0,
@@ -68,7 +68,7 @@ const Card = () => {
                     scale: 0.85,
                     filter: "blur(10px)",
                   }}
-                  className="absolute inset-0 h-full w-full bg-red-500 rounded-lg"
+                  className="absolute inset-0 h-full w-full rounded-lg bg-red-500"
                 ></motion.div>
               </div>
             </div>
