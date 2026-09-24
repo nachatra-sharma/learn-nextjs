@@ -14,4 +14,9 @@ export const Links = [
     name: "Card",
     link: "/card",
   },
+  {
+    id: 4,
+    name: "Feature",
+    link: "/feature",
+  },
 ];
