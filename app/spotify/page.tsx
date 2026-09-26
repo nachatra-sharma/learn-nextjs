@@ -1,5 +1,8 @@
+"use client";
+import Modal from "@/component/modal";
 import { songs, type Songs } from "@/constant/play";
-import Image from "next/image";
+import { useState } from "react";
+import { motion } from "motion/react";
 
 const Spotify = () => {
   return (
@@ -12,29 +15,52 @@ const Spotify = () => {
 };
 
 const Card = ({ data }: { data: Songs }) => {
+  const [song, setSong] = useState<null | Songs>(null);
+
   return (
-    <div className="flex min-w-3xl flex-row items-center justify-between rounded-2xl border border-gray-200 bg-white p-4 shadow-xs">
-      <div className="flex flex-row gap-3">
-        <div>
-          <Image
-            src={data.image}
-            alt={data.title}
-            className="rounded-md bg-cover"
-            width={100}
-            height={100}
-          />
+    <>
+      {song && <Modal song={song} setSong={setSong} />}
+      <motion.div
+        layoutId={`card-${data.title}`}
+        className="flex min-w-3xl flex-row items-center justify-between rounded-2xl border border-gray-200 bg-white p-4 shadow-xs"
+        onClick={() => setSong(data)}
+      >
+        <div className="flex flex-row gap-3">
+          <div>
+            <motion.img
+              layoutId={`card-image-${data.title}`}
+              src={data.image}
+              alt={data.title}
+              className="rounded-md bg-cover"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div>
+            <motion.h1
+              layoutId={`card-heading-${data.title}`}
+              className="font-semibold tracking-tight"
+            >
+              {data.title}
+            </motion.h1>
+            <motion.p
+              layoutId={`card-author-${data.title}`}
+              className="text-xs text-gray-400"
+            >
+              {data.artist}
+            </motion.p>
+          </div>
         </div>
         <div>
-          <h1 className="font-semibold tracking-tight">{data.title}</h1>
-          <p className="text-xs text-gray-400">{data.artist}</p>
+          <motion.button
+            layoutId={`card-play-${data.title}`}
+            className="cursor-pointer rounded-full bg-[#4f772d] px-4 py-1 text-sm text-white"
+          >
+            Play
+          </motion.button>
         </div>
-      </div>
-      <div>
-        <button className="cursor-pointer rounded-full bg-[#4f772d] px-4 py-1 text-sm text-white">
-          Play
-        </button>
-      </div>
-    </div>
+      </motion.div>
+    </>
   );
 };
 

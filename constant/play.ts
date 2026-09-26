@@ -17,7 +17,7 @@ export const songs: Songs[] = [
     description:
       "Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her haunting voice and introspective lyrics.",
     details:
-      "Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist.",
+      "Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist. Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist. Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist.",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const songs: Songs[] = [
     description:
       "Babbu Maan is a renowned Punjabi singer, songwriter, actor, and producer known for his distinctive voice and meaningful Punjabi music.",
     details:
-      "Mitran Di Chhatri is one of Babbu Maan's popular Punjabi tracks. His music often combines traditional Punjabi sounds with contemporary arrangements and lyrics centered around life, relationships, culture, and emotions.",
+      "Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist. Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist. Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist.",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const songs: Songs[] = [
     description:
       "Metallica is an American heavy metal band known for its powerful guitar riffs, intense performances, and influence on the development of thrash metal.",
     details:
-      "For Whom The Bell Tolls is one of Metallica's most recognizable songs. The track is known for its heavy instrumentation, distinctive bass intro, and themes surrounding war and the human cost of conflict.",
+      "Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist. Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist. Her songs often explore themes of tragic romance, glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and influential artist.",
   },
   {
     id: 4,
